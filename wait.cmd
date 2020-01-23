@@ -52,7 +52,7 @@ FOR /L %%i IN (1,1,!minutes!) DO (
 	) ELSE (
 		set "SKIPFIRST="
 	)
-	timeout /t 1 !BREAK!>nul
+	timeout /t 60 !BREAK!>nul
 	set /a minutes=minutes-1
 )
 
