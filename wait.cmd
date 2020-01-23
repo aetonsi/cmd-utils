@@ -36,7 +36,6 @@ if "%~1" EQU "--allowbreak" (
 )
 
 rem ====== main function
-if not defined NOTITLE title %~nx0 %*
 set minutes=%~1
 if not defined minutes (
 	echo %%1: argument not valid
